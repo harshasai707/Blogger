@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>My Blog - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="header-logo">
+                <span class="logo-mark">B</span>
+                <h1 class="site-title">Blogger</h1>
+            </div>
+            <nav class="site-nav">
+                <a href="#" class="active">Home</a>
+                <a href="#">About</a>
+                <a href="#">Categories</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container layout">
+        <section class="main-col">
+            <article class="hero-post">
+                <img src="user-profile-icon-vector-avatar-600nw-2558760599.webp" alt="Featured" class="hero-img">
+                <div class="hero-content">
+                    <h2>Welcome to My Blog</h2>
+                    <p class="meta">By Admin • Oct 19, 2025</p>
+                    <p>Short intro paragraph about what this blog is, what readers can expect, and a call to explore the latest posts below.</p>
+                    <a class="read-more" href="#">Read more →</a>
+                </div>
+            </article>
+
+            <section class="posts">
+                <h3>Latest Posts</h3>
+
+                <article class="post-card" data-category="html">
+                    <img src="assests/images.png" alt="HTML" class="post-thumb">
+                    <div class="post-body">
+                        <div class="post-head">
+                            <span class="badge">HTML</span>
+                            <h4>Getting Started with HTML</h4>
+                        </div>
+                        <p class="meta">By Harsh • Oct 18, 2025</p>
+                        <p>Quick tips to structure your first web page and best practices for semantic HTML.</p>
+                        <div class="post-footer">
+                            <div class="tags">
+                                <span>#markup</span>
+                                <span>#beginner</span>
+                            </div>
+                            <a href="#" class="read-more">Read post →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="css">
+                    <img src="assests/free-css-icon-svg-download-png-722685.webp" alt="CSS" class="post-thumb">
+                    <div class="post-body">
+                        <div class="post-head">
+                            <span class="badge badge-accent">CSS</span>
+                            <h4>Styling Forms with CSS</h4>
+                        </div>
+                        <p class="meta">By Harsh • Oct 15, 2025</p>
+                        <p>How to make simple forms look polished and accessible.</p>
+                        <div class="post-footer">
+                            <div class="tags">
+                                <span>#forms</span>
+                                <span>#accessibility</span>
+                            </div>
+                            <a href="#" class="read-more">Read post →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-card" data-category="responsive">
+                    <img src="assests/responsive.png" alt="Responsive" class="post-thumb">
+                    <div class="post-body">
+                        <div class="post-head">
+                            <span class="badge badge-primary">Responsive</span>
+                            <h4>Designing Responsive Layouts</h4>
+                        </div>
+                        <p class="meta">By Harsh • Oct 10, 2025</p>
+                        <p>Techniques for building layouts that work on mobile and desktop.</p>
+                        <div class="post-footer">
+                            <div class="tags">
+                                <span>#layout</span>
+                                <span>#mediaqueries</span>
+                            </div>
+                            <a href="#" class="read-more">Read post →</a>
+                        </div>
+                    </div>
+                </article>
+            </section>
+        </section>
+
+        <aside class="sidebar">
+            <div class="widget">
+                <h4>Search</h4>
+                <input id="search" placeholder="Search posts...">
+            </div>
+
+            <div class="widget">
+                <h4>Categories</h4>
+                <ul class="category-filter">
+                    <li><button class="cat-btn active" data-filter="all">All</button></li>
+                    <li><button class="cat-btn" data-filter="html">HTML</button></li>
+                    <li><button class="cat-btn" data-filter="css">CSS</button></li>
+                    <li><button class="cat-btn" data-filter="responsive">Responsive</button></li>
+                </ul>
+            </div>
+
+            <div class="widget">
+                <h4>Subscribe</h4>
+                <form id="subscribeForm">
+                    <label for="name">Name</label>
+                    <input id="name" name="name" placeholder="Your name">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="you@example.com">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+
+            <div class="widget">
+                <h4>Other Categories</h4>
+                <ul class="categories">
+                    <li><a href="#">JavaScript</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+<!-- Improved footer -->
+<footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-col">
+            <div class="footer-logo">
+                <span class="logo-mark">B</span>
+                <div>
+                    <div class="site-title-footer">Blogger</div>
+                    <p class="footer-desc">A personal blog sharing web development tutorials, tips and practical examples for modern web.</p>
+                </div>
+            </div>
+            <div class="social-links" aria-label="social">
+                <a href="#" title="Twitter" aria-label="Twitter">T</a>
+                <a href="#" title="GitHub" aria-label="GitHub">G</a>
+                <a href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Stay Updated</h4>
+            <p class="footer-small">Subscribe for short, useful updates — no spam.</p>
+            <form class="footer-newsletter" id="footerSubscribe" onsubmit="event.preventDefault(); alert('Thanks — check your inbox.');">
+                <input type="email" placeholder="you@example.com" aria-label="Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container footer-bottom">
+        <div class="copyright">© 2025 Blogger — Built with care</div>
+        <div class="footer-meta">Made with ❤️ • <a href="#">Privacy</a> • <a href="#">Terms</a></div>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
